@@ -1,2 +1,3 @@
-# one-monokai-atom
-One Monokai theme for ATOM
+# One Monokai Syntax theme for Atom
+
+Atom syntax
