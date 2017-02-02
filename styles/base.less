@@ -68,7 +68,7 @@ atom-text-editor,atom-text-editor {
 }
 
 .syntax--storage.syntax--type {
-  color: @blue;
+  color: @cyan;
 }
 
 .syntax--storage.syntax--modifier {
@@ -78,14 +78,20 @@ atom-text-editor,atom-text-editor {
 .syntax--constant {
   color: @purple;
 
-  &.syntax--numeric,
   &.syntax--boolean {
-    color: @lime;
+    color: @cyan;
   }
 }
 
 .syntax--variable {
-  color: #fff;
+  color: @blue;
+  &.syntax--parameter {
+    color: @blue;
+  }
+}
+
+.syntax--variable.syntax--property,.syntax--punctuation {
+  color: @plain;
 }
 
 .syntax--delimiter, .syntax--brace {
@@ -93,7 +99,7 @@ atom-text-editor,atom-text-editor {
 }
 
 .syntax--delimiter.syntax--period {
-  color: @lime;
+  color: @pink;
 }
 
 .syntax--invalid.syntax--deprecated {
@@ -105,19 +111,38 @@ atom-text-editor,atom-text-editor {
   color: @pink;
 }
 
+.syntax--source {
+  color: @blue;
+}
+
+.syntax--instance {
+  color: @blue;
+}
+
+.syntax--function {
+  color: @plain;
+  &.syntax--name{
+    color: @lime;
+  }
+}
+
 .syntax--string {
   color: @yellow;
 
   .syntax--constant.syntax--character.syntax--escape {
     color: @pink;
   }
+  
+  &.syntax--unquoted {
+    color: @cyan;
+  }
 
   &.syntax--regexp {
-    color: @blue;
+    color: @pink;
 
     .syntax--source.syntax--ruby.syntax--embedded,
     .syntax--string.syntax--regexp.syntax--arbitrary-repitition {
-      color: @pink;
+      color: @blue;
     }
   }
 }

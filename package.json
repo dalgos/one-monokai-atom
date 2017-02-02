@@ -1,7 +1,7 @@
 {
-  "name": "one-monokai-atom",
+  "name": "one-monokai-syntax",
   "theme": "syntax",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "private": true,
   "description": "One Monokai theme for Atom.",
   "repository": "https://github.com/dalgos/one-monokai-atom",
