@@ -1,3 +1,5 @@
-# One Monokai Syntax theme for Atom
+# Two Monokai Syntax
 
-Atom syntax
+A two monokai syntax theme for Atom.
+
+![thumbs](http://i.imgur.com/UUxhROC.png)
